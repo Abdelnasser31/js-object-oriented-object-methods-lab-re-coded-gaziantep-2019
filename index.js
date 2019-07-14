@@ -13,6 +13,11 @@ function BoardMember (name, homeState, training) {
   this.doCharity = function () {
     console.log ("I like to help people.");
   }
-  this.realesePressStatement = 
-  "You will see great things from Scuber";
+  this.realesePressStatement = function () {
+     console.log ("You will see great things from Scuber");
+  }
+  
+  this.sayHi = function () {
+    console.log (`Hi, my name is ${this.name}. I am from ${this.homeState}, and I was trained in ${this.training}.`);
+  }
 }
